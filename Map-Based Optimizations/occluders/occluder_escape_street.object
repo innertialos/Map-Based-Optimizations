@@ -14,17 +14,4 @@
 		<occluder name="oc_plane_10"/>
 		<occluder name="oc_plane_11"/>
 	</occluders>
-	<graphics>
-		<object enabled="true" name="oc_plane_01" />
-		<object enabled="true" name="oc_plane_02" />
-		<object enabled="true" name="oc_plane_03" />
-		<object enabled="true" name="oc_plane_04" />
-		<object enabled="true" name="oc_plane_05" />
-		<object enabled="true" name="oc_plane_06" />
-		<object enabled="true" name="oc_plane_07" />
-		<object enabled="true" name="oc_plane_08" />
-		<object enabled="true" name="oc_plane_09" />
-		<object enabled="true" name="oc_plane_10" />
-		<object enabled="true" name="oc_plane_11" />
-	</graphics>
 </dynamic_object> 
