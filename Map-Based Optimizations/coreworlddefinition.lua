@@ -7864,25 +7864,7 @@ elseif level == 'escape_garage' then
 	end 
 
 elseif level == 'escape_street' then
-
-	if Celer then
-		Celer:spawn_occluder('10x8', Vector3(1100, -1020, -400), Rotation(90, 0, 0))
-		Celer:spawn_occluder('10x8', Vector3(1100, -1020, -400), Rotation(90, 0, 0), true)
-		
-		Celer:spawn_occluder('16x8', Vector3(240, -1670, -400), Rotation(0, 0, 0))
-		Celer:spawn_occluder('16x8', Vector3(240, -1670, -400), Rotation(0, 0, 0), true)
-		
-		Celer:spawn_occluder('16x8', Vector3(1850, -1680, 395), Rotation(90, -90, 0))
-		Celer:spawn_occluder('16x8', Vector3(1850, -1680, 395), Rotation(90, -90, 0), true)
-
-		Celer:spawn_occluder('8x8', Vector3(1050, -1680, 395), Rotation(90, -90, 0), true)
-		
-		Celer:spawn_occluder('16x8', Vector3(1850, 700, 395), Rotation(180, -90, 0), true)
-		
-		Celer:spawn_occluder('32x16', Vector3(-1600, -2500, -800), Rotation(90, 0, 0))
-		Celer:spawn_occluder('32x16', Vector3(-1600, -2500, -800), Rotation(90, 0, 0), true)
-	end 
-	
+	MBO:create_occluder_unit()
 elseif level == 'family' then
 
 	if Celer then
