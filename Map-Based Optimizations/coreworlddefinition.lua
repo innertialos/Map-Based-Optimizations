@@ -7833,36 +7833,7 @@ elseif level == 'election_day_3' or level == 'election_day_3_skip1' or level == 
 		return create_orig(self, layer, offset)
 	end
 elseif level == 'escape_garage' then
-	-- TdlQ, this was so confusing to figure out
-
-	if Celer then
-		-- Top floor
-		Celer:spawn_occluder('32x16', Vector3(-1650, -900, 420), Rotation(0, -90, 0))
-		Celer:spawn_occluder('32x16', Vector3(-1650, -900, 420), Rotation(0, -90, 0), true)
-		
-		Celer:spawn_occluder('32x32', Vector3(1550, -3300, 420), Rotation(0, -90, 0), true)
-
-		Celer:spawn_occluder('32x32', Vector3(-3700, 700, 420), Rotation(0, -90, 0))
-		Celer:spawn_occluder('32x32', Vector3(-3700, 700, 420), Rotation(0, -90, 0), true)
-		
-		Celer:spawn_occluder('32x32', Vector3(-500, 1550, 420), Rotation(0, -90, 0))
-		Celer:spawn_occluder('32x32', Vector3(-500, 1550, 420), Rotation(0, -90, 0), true)
-		
-		-- Middle floor
-		Celer:spawn_occluder('32x16', Vector3(-1650, -900, 40), Rotation(0, -90, 0))
-		Celer:spawn_occluder('32x16', Vector3(-1650, -900, 40), Rotation(0, -90, 0), true)
-
-		Celer:spawn_occluder('32x32', Vector3(-3700, 100, 40), Rotation(0, -90, 0))
-		Celer:spawn_occluder('32x32', Vector3(-3700, 100, 40), Rotation(0, -90, 0), true)
-		
-		Celer:spawn_occluder('32x16', Vector3(-1300, 1550, 40), Rotation(0, -90, 0))
-		Celer:spawn_occluder('32x16', Vector3(-1300, 1550, 40), Rotation(0, -90, 0), true)
-		
-		Celer:spawn_occluder('32x32', Vector3(1900, -1600, 40), Rotation(0, -90, 0))
-
-		Celer:spawn_occluder('32x32', Vector3(1900, -1600, 40), Rotation(0, -90, 0))
-	end 
-
+	MBO:create_occluder_unit()
 elseif level == 'escape_street' then
 	MBO:create_occluder_unit()
 elseif level == 'family' then
